@@ -1,6 +1,5 @@
 package epicode.u5d01introductionspringboot.orders;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
@@ -42,11 +41,6 @@ public class Order {
 
   @Override
   public String toString() {
-    // return "Order [numberOrder=" + numberOrder + ", table=" + table + ",
-    // consummationsList=" + consummationsList
-    // + ", orderState=" + orderState + ", numberPax=" + numberPax + ", dateOrder="
-    // + dateOrder + ", totalPrice="
-    // + totalPrice + ", paxPrice=" + paxPrice + "]";
     return "\n********** Order: " + numberOrder + " **********" + table + "\nOrder state: " + orderState + "\nPax: "
         + numberPax + "\nDate: " + dateOrder + "\nPax price: " + paxPrice + "\nTotal price: " + totalPrice
         + "\n******************************";

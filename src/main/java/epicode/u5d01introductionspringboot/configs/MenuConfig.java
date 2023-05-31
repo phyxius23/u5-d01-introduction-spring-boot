@@ -1,6 +1,5 @@
 package epicode.u5d01introductionspringboot.configs;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
