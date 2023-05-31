@@ -20,7 +20,7 @@ public class ToppingDecorator extends Consummation {
     return this.decoratedPizza.getPrice() + this.price;
   }
 
-  public long getCalories() {
+  public double getCalories() {
     return this.decoratedPizza.getCalories() + this.calories;
   }
 

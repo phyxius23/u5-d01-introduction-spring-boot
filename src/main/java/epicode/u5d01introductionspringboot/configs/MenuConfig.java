@@ -9,6 +9,7 @@ import epicode.u5d01introductionspringboot.model.drinks.Lemonade;
 import epicode.u5d01introductionspringboot.model.drinks.Water;
 import epicode.u5d01introductionspringboot.model.drinks.Wine;
 import epicode.u5d01introductionspringboot.model.pizzas.Pizza;
+import epicode.u5d01introductionspringboot.model.pizzas.PizzaFamily;
 import epicode.u5d01introductionspringboot.model.toppings.HamTopping;
 import epicode.u5d01introductionspringboot.model.toppings.OnionTopping;
 import epicode.u5d01introductionspringboot.model.toppings.PineappleTopping;
@@ -25,6 +26,8 @@ public class MenuConfig {
     menu.getMenuEntries().add(getPizzaOnions());
     menu.getMenuEntries().add(getPizzaHamOnions());
     menu.getMenuEntries().add(getPizzaHawaiian());
+    menu.getMenuEntries().add(getMargheritaFamily());
+    menu.getMenuEntries().add(getPizzaFamilyHam());
     menu.getMenuEntries().add(getLemonade());
     menu.getMenuEntries().add(getWine());
     menu.getMenuEntries().add(getWater());
@@ -56,6 +59,16 @@ public class MenuConfig {
   @Bean
   Consummation getPizzaHawaiian() {
     return new PineappleTopping(new HamTopping(new Pizza()));
+  }
+
+  @Bean
+  Consummation getMargheritaFamily() {
+    return new PizzaFamily();
+  }
+
+  @Bean
+  Consummation getPizzaFamilyHam() {
+    return new HamTopping(new PizzaFamily());
   }
 
   // BEAN PER I DRINK

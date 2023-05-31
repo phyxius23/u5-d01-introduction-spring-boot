@@ -6,5 +6,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class Consummation extends Product {
-  protected long calories;
+  protected double calories;
 }

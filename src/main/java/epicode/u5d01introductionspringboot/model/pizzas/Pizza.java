@@ -23,4 +23,8 @@ public class Pizza extends Consummation {
     return this.getName() + "\t\tcalorie: " + this.getCalories() + "\tprezzo: " + this.getPrice() + "€";
   }
 
+  public double getCaloriesPizza() {
+    return this.calories;
+  }
+
 }
