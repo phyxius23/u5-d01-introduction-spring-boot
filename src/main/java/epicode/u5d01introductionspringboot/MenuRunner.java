@@ -6,7 +6,9 @@ import org.springframework.stereotype.Component;
 
 import epicode.u5d01introductionspringboot.configs.MenuConfig;
 import epicode.u5d01introductionspringboot.model.Menu;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Component
 public class MenuRunner implements CommandLineRunner {
 
@@ -19,6 +21,7 @@ public class MenuRunner implements CommandLineRunner {
 
     menu.print();
 
+    log.info(ctx.getBean("getOrder").toString());
     ctx.close();
   }
 
